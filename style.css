@@ -1,0 +1,67 @@
+/*
+h3{
+    color: green;
+}*/
+
+/*
+All the lines are CSS Rules.
+Betewwn & Incliuding { } is CSS Declaration block. 
+Starting to the "h3" { is CSS Selector.
+color is Property.
+green is value. 
+*/
+
+h3 {
+  color: green;
+}
+
+/*list-style-type: in inspect click ul and get more styles*/
+ul {
+  color: teal;
+  list-style-type: circle;
+  font-family: "Corinthia", cursive;
+  font-family: "Gwendolyn", cursive;
+  font-family: "Island Moments", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Serif", serif;
+}
+
+ol {
+  color: turquoise;
+  background-color: steelblue;
+  font-weight: bold;
+}
+
+/*font-size: to make font size bigger
+16px is normal*/
+/*instead of     /*border: 5px solid teal;
+also can write 
+ border-width: 5px;
+    border-style: dashed;
+    border-color: springgreen;
+*/
+p {
+  color: yellowgreen;
+  font-size: 25px;
+  /*border: 5px solid teal;*/
+  border-top: 5px dashed teal;
+  border-bottom: 5px solid skyblue;
+  padding: 20px;
+  /*margin: 50px;*/
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/*Box model pf css
+content -> padding -> border -> margin
+every element in html has box
+Padding gives the space between content and the border.
+margin used to push other elements or gap between elements*/
+
+/*user agent style is the browser default style, on inspecting box we can see this*/
+
+/*Types of selecting Styles
+tag selector, class selector*/
+.fav-things {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
