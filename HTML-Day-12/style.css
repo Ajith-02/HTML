@@ -40,7 +40,7 @@ also can write
     border-style: dashed;
     border-color: springgreen;
 */
-p {
+.highlight-para {
   color: yellowgreen;
   font-size: 25px;
   /*border: 5px solid teal;*/
@@ -85,4 +85,20 @@ different formats of color
   /*  object-fit: contain;*/
   object-position: left;
   /*display: block;*/
+}
+
+.highlight {
+  color: orange;
+}
+
+.end-heading{
+  background-color: darkcyan;
+}
+
+.end-para{
+  background-color: darkcyan;
+}
+
+.foter{
+  width: 50%;
 }
