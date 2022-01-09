@@ -1,0 +1,26 @@
+.main{
+    text-align: center;
+    font-style: italic;
+}
+
+.cool{
+    color: crimson;
+}
+/*
+.container{
+    color: white;
+    font-style: italic;
+    background:teal;
+    font-weight: bold;
+}*/
+
+/*<!-- CSS combinators -->*/
+/* p is the child of .container */
+/*container , p are selectors & between > is says 
+the relationship between the selectors*/
+/* > is called combinator*/
+
+
+.container > p{
+background: violet;
+}
