@@ -19,8 +19,25 @@
 /*container , p are selectors & between > is says 
 the relationship between the selectors*/
 /* > is called combinator*/
+/*space is a next combinator*/
+/* + will select next sibling*/
 
 
+/* > is child selector */
 .container > p{
 background: violet;
+}
+
+.container-art p{
+background: yellowgreen;
+}
+
+/* + will select next sibling*/
+.one + p + p{
+    color: blue;
+}
+
+/*~ select all next to class*/
+.two ~ p{
+    color: blue;
 }
