@@ -102,3 +102,23 @@ different formats of color
 .foter{
   width: 50%;
 }
+
+.user-data{
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+th, td{
+  padding: 9px;
+  border: 1px solid salmon;
+}
+
+fieldset{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.color-bg{
+  background-image: linear-gradient(to left, #c42b2b, #c16600, #ab9500, #84bd3c, #31e08c);
+}

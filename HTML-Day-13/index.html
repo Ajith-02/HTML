@@ -108,6 +108,164 @@
     </section>
     <footer></footer>
 
+
+    <table border="1" class="user-data">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ajith</td>
+                <td>Padmakumar</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Vinoth</td>
+                <td>Padmakumar</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1" class="user-data">
+        <thead>
+            <tr>
+                <th colspan="2">Full Name</th>
+                <th rowspan="2">Gender</th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ajith</td>
+                <td>Padmakumar</td>
+                <td rowspan="2">Male</td>
+            </tr>
+            <tr>
+                <td>Vinoth</td>
+                <td>Padmakumar</td>
+            </tr>
+            <tr>
+                <td>Amanda</td>
+                <td>John</td>
+                <td>Female</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- All form elements -->
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+    <!-- radio button -->
+    <!--checked used to select default  -->
+    <input type="radio" value="male" id="male" name="gender"><label for="male">Male</label>
+    <input type="radio" value="male" id="female" name="gender" checked><label for="female">Female</label>
+
+    <!-- check box -->
+    <!-- disabled used to user not to select -->
+    <p>Select your hobbies</p>
+    <input type="checkbox" value="gaming" id="gaming" name="hobbies"><label for="gaming">Gaming</label>
+    <input type="checkbox" value="skydiving" id="skydiving" name="hobbies"><label for="skydiving">Sky Diving</label>
+    <input type="checkbox" value="cooking" id="cooking" name="hobbies" disabled><label for="cooking">Gaming</label>
+
+    <!-- drop down  -->
+
+    <div>
+        <label for="state">Select the State:</label>
+        <select name="" id="state">
+            <option value="">--Select State--</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="DL" selected>Delhi</option>
+
+            <option value="DL">Delhi</option>
+            <option value="KL">Kerala</option>
+        </select>
+    </div>
+
+    <!-- fieldset & legend used to make a border except the heading -->
+    <fieldset>
+        <legend>
+            <p>Select your hobbies</p>
+        </legend>
+        <input type="checkbox" value="gaming" id="gaming" name="hobbies"><label for="gaming">Gaming</label>
+        <input type="checkbox" value="skydiving" id="skydiving" name="hobbies"><label for="skydiving">Sky Diving</label>
+        <input type="checkbox" value="cooking" id="cooking" name="hobbies" disabled><label for="cooking">Gaming</label>
+    </fieldset>
+
+    <!-- text area -->
+    <div>
+        <textarea placeholder="Tweet" name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <br><br>
+    <!-- ------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------- -->
+    <!-- form validation -->
+    <h2>Form validation</h2>
+    <form action="" class="color-bg">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" minlength="3" maxlength="10" required><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" pattern="[A-Z]+[0-9]+"><br> 
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age" min="0" max="150"><br>
+        </div>
+        <!-- radio button -->
+        <!--checked used to select default  -->
+        <input type="radio" value="male" id="male" name="gender"><label for="male">Male</label>
+        <input type="radio" value="male" id="female" name="gender" checked><label for="female">Female</label><br>
+
+        <!-- check box -->
+        <!-- disabled used to user not to select -->
+        <p>Select your hobbies</p>
+        <input type="checkbox" value="gaming" id="gaming" name="hobbies"><label for="gaming">Gaming</label>
+        <input type="checkbox" value="skydiving" id="skydiving" name="hobbies"><label for="skydiving">Sky Diving</label>
+        <input type="checkbox" value="cooking" id="cooking" name="hobbies" disabled><label
+            for="cooking">Gaming</label><br><br>
+
+        <!-- drop down  -->
+
+        <div>
+            <label for="state">Select the State:</label>
+            <select name="" id="state">
+                <option value="">--Select State--</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="DL" selected>Delhi</option>
+
+                <option value="DL">Delhi</option>
+                <option value="KL">Kerala</option>
+            </select>
+        </div>
+
+        <!-- fieldset & legend used to make a border except the heading -->
+        <fieldset>
+            <legend>
+                <p>Select your hobbies</p>
+            </legend>
+            <input type="checkbox" value="gaming" id="gaming" name="hobbies"><label for="gaming">Gaming</label>
+            <input type="checkbox" value="skydiving" id="skydiving" name="hobbies"><label for="skydiving">Sky
+                Diving</label>
+            <input type="checkbox" value="cooking" id="cooking" name="hobbies" disabled><label
+                for="cooking">Gaming</label>
+        </fieldset>
+
+        <!-- text area -->
+        <div>
+            <textarea placeholder="Tweet" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
 </body>
 
 </html>
