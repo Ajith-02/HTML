@@ -1,10 +1,10 @@
-.main{
-    text-align: center;
-    font-style: italic;
+.main {
+  text-align: center;
+  font-style: italic;
 }
 
-.cool{
-    color: crimson;
+.cool {
+  color: crimson;
 }
 /*
 .container{
@@ -22,24 +22,23 @@ the relationship between the selectors*/
 /*space is a next combinator*/
 /* + will select next sibling*/
 
-
 /* > is child selector */
-.container > p{
-background: violet;
+.container > p {
+  background: violet;
 }
 
-.container-art p{
-background: yellowgreen;
+.container-art p {
+  background: yellowgreen;
 }
 
 /* + will select next sibling*/
-.one + p + p{
-    color: blue;
+.one + p + p {
+  color: blue;
 }
 
 /*~ select all next to class*/
-.two ~ p{
-    color: blue;
+.two ~ p {
+  color: blue;
 }
 
 /*
@@ -55,16 +54,80 @@ button:hover{
     transform: scale(1);
 }
 */
-button{
-    height: 300px;
-    width: 50%;
-    /*background: cornflowerblue;*/
-    background: url(https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=20&m=1057506940&s=612x612&w=0&h=3j5EA6YFVg3q-laNqTGtLxfCKVR3_o6gcVZZseNaWGk=);
-    background-size: cover;
-    transition: 0.2s;
+/*
+button {
+  height: 300px;
+  width: 50%;
+  background: cornflowerblue;
+  background-size: cover;
+  transition: 0.2s;
 }
-button:hover{
-    background:greenyellow;
-    border-radius: 50%;
-    transform: scale(1);
+button:hover {
+  background: greenyellow;
+  border-radius: 50%;
+  transform: scale(1);
+} */
+
+button {
+  height: 300px;
+  width: 50%;
+  background: url(https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=20&m=1057506940&s=612x612&w=0&h=3j5EA6YFVg3q-laNqTGtLxfCKVR3_o6gcVZZseNaWGk=),
+    linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-blend-mode: color;
+  background-size: cover;
+}
+button:hover {
+  background: url(https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=20&m=1057506940&s=612x612&w=0&h=3j5EA6YFVg3q-laNqTGtLxfCKVR3_o6gcVZZseNaWGk=);
+  background-size: cover;
+}
+
+.good > p:nth-child(even) {
+  color: tomato;
+}
+
+a{
+    color: purple;
+    text-decoration: none;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: seagreen;
+}
+
+a:active{
+    color: springgreen;
+}
+
+/*
+css units
+
+px, %, rem, vh, vw
+
+1 rem = 16px 
+by default is is 16px, but we can change the rem
+to change:
+:root{
+     font-size:16px; // now 1 rem is 16px
+     font-size:20px; // now 1 rem is 20px
+}
+rem is useful because if in future we planned to change the proportional unit
+we can change all the size in one line change.
+if we give in px we need to change every where.
+
+vh - view port height
+vw - view port width
+
+*/
+.container{
+    background-color: teal;
+    width: 400px;
+}
+
+h2{
+    background-color: pink;
+    width: 50vw;
 }
