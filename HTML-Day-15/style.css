@@ -1,0 +1,23 @@
+.layout > div{
+    height: 9rem;
+    width: 8rem;
+    /*margin: 1rem;*/
+    background-color: teal;
+}
+
+.layout > div:nth-child(2){
+    background-color: tomato;
+}
+
+.layout > div:nth-child(3){
+    background-color: violet;
+}
+
+.layout > div:nth-child(4){
+    background-color: yellowgreen;
+}
+
+.layout{
+    display: flex;
+    gap: 1rem;
+}
