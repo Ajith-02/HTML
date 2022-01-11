@@ -1,23 +1,77 @@
-.layout > div{
-    height: 9rem;
-    width: 8rem;
-    /*margin: 1rem;*/
-    background-color: teal;
+.layout > div {
+  height: 15rem;
+  width: 10rem;
+  /*margin: 1rem;*/
+  background-color: teal;
 }
 
-.layout > div:nth-child(2){
-    background-color: tomato;
+.layout > div:nth-child(2) {
+  background-color: tomato;
 }
 
-.layout > div:nth-child(3){
-    background-color: violet;
+.layout > div:nth-child(3) {
+  background-color: violet;
+  /*z-index: 15;*/
 }
 
-.layout > div:nth-child(4){
-    background-color: yellowgreen;
+.layout > div:nth-child(4) {
+  background-color: yellowgreen;
 }
 
-.layout{
+.layout {
+  display: flex;
+  gap: 1rem;
+}
+
+.posttion > div {
+  height: 15rem;
+  width: 10rem;
+  /*margin: 1rem;*/
+  background-color: teal;
+}
+
+.posttion > div:nth-child(2) {
+  background-color: tomato;
+  position: absolute;
+  left: 50px;
+}
+
+.posttion > div:nth-child(3) {
+  background-color: violet;
+  /*position: relative;
+    left: 40px;
+    top: 20px;*/
+}
+
+.posttion > div:nth-child(4) {
+  background-color: yellowgreen;
+}
+/*
+.posttion{
     display: flex;
     gap: 1rem;
+}
+*/
+.menu {
+  /*to view in same line*/
+  display: flex;
+  /*to remove decoration*/
+  list-style: none;
+  padding: 20px;
+  margin: 0px;
+  width: 100%;
+  background-color: beige;
+  justify-content: space-around;
+  /*to make the menu float*/
+  position: fixed;
+  /*to give priority*/
+  z-index: 10;
+  /*if we give this as high priority give highest 
+  value than other, if second priority is 9*/
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 15;
 }
